@@ -1,0 +1,6 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+basic-user: alex
+basic-pass: alex1
