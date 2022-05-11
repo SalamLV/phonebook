@@ -37,3 +37,42 @@
 2022-04-25 18:29:41.174  INFO 27696 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-04-25 18:29:41.176  INFO 27696 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2022-04-25 18:29:41.539  WARN 27696 --- [http-nio-9000-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [310] milliseconds.
+2022-04-25 18:37:33.541  INFO 21848 --- [main] c.s.r.m.phonebook.PhonebookApplication   : Starting PhonebookApplication using Java 12 on LTPC0YHZ1B with PID 21848 (C:\My Dev\My Git Projects\phonebook\target\classes started by a.demjanenko in C:\My Dev\My Git Projects\phonebook)
+2022-04-25 18:37:33.545  INFO 21848 --- [main] c.s.r.m.phonebook.PhonebookApplication   : No active profile set, falling back to default profiles: default
+2022-04-25 18:37:35.062  INFO 21848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-25 18:37:35.152  INFO 21848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
+2022-04-25 18:37:36.191  INFO 21848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2022-04-25 18:37:36.201  INFO 21848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-25 18:37:36.202  INFO 21848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-04-25 18:37:36.360  INFO 21848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2022-04-25 18:37:36.361  INFO 21848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2734 ms
+2022-04-25 18:37:36.518  INFO 21848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-25 18:37:36.708  INFO 21848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-25 18:37:36.770  INFO 21848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-25 18:37:36.829  INFO 21848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2022-04-25 18:37:36.976  INFO 21848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-25 18:37:37.132  INFO 21848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-04-25 18:37:37.831  INFO 21848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-25 18:37:37.839  INFO 21848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-25 18:37:37.896  WARN 21848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-25 18:37:38.878  INFO 21848 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-25 18:37:38.966  INFO 21848 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@530a46f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@b0d4873, org.springframework.security.web.header.HeaderWriterFilter@5570ee6d, org.springframework.web.filter.CorsFilter@3180131e, org.springframework.security.web.authentication.logout.LogoutFilter@1c41931a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7878459f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f00c40e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@315365ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62376bdd, org.springframework.security.web.session.SessionManagementFilter@6a905513, org.springframework.security.web.access.ExceptionTranslationFilter@6ca97ddf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@769a9b7a]
+2022-04-25 18:37:39.061  INFO 21848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 18:37:39.243  INFO 21848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path '/api'
+2022-04-25 18:37:39.244  INFO 21848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-04-25 18:37:39.267  INFO 21848 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-04-25 18:37:39.307  INFO 21848 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-04-25 18:37:39.460  INFO 21848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: allUsingGET_1
+2022-04-25 18:37:39.463  INFO 21848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletePersonUsingDELETE_1
+2022-04-25 18:37:39.470  INFO 21848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: newEmployeeUsingPOST_1
+2022-04-25 18:37:39.478  INFO 21848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: oneUsingGET_1
+2022-04-25 18:37:39.481  INFO 21848 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: replacePersonUsingPUT_1
+2022-04-25 18:37:39.503  INFO 21848 --- [main] c.s.r.m.phonebook.PhonebookApplication   : Started PhonebookApplication in 6.741 seconds (JVM running for 7.319)
+2022-04-25 18:37:39.593  INFO 21848 --- [main] c.s.r.m.p.configuration.LoadDatabase     : Preloading Employee{id=1, name='Barak', lastname='Obama', birthday='1980-05-01 00:00:00}
+2022-04-25 18:37:39.595  INFO 21848 --- [main] c.s.r.m.p.configuration.LoadDatabase     : Preloading Employee{id=2, name='Donald', lastname='Trump', birthday='1985-10-01 00:00:00}
+2022-04-25 18:37:39.602  INFO 21848 --- [main] c.s.r.m.p.configuration.LoadDatabase     : Preloading Phone{id=1, personid=1, phone='+371 26758999', type=mobile}
+2022-04-25 18:37:39.604  INFO 21848 --- [main] c.s.r.m.p.configuration.LoadDatabase     : Preloading Phone{id=2, personid=2, phone='+371 26758777', type=home}
+2022-04-25 18:37:52.854  INFO 21848 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 18:37:52.857  INFO 21848 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 18:37:52.858  INFO 21848 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-25 18:37:53.405  WARN 21848 --- [http-nio-9000-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [342] milliseconds.
