@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import jakarta.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 
@@ -22,7 +21,7 @@ public class Phone {
     @Pattern(regexp="^\\+371[ .]?\\d{8}$")
     private String phone;
 
-    public static enum PhoneEnum {
+    public enum PhoneEnum {
         mobile, home, work
     }
 
