@@ -1,9 +1,10 @@
 package com.spb.rest.mytask.phonebook.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 

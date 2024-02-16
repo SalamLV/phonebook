@@ -1,14 +1,14 @@
 package com.spb.rest.mytask.phonebook.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.spb.rest.mytask.phonebook.error.CustomValidationException;
-import com.sun.istack.NotNull;
+
+
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.text.DateFormat;
@@ -23,14 +23,17 @@ public class Person {
     @SequenceGenerator(name="person_generator", sequenceName = "person_seq")
     @ApiModelProperty(position = 0)
     private Long id;
+
     @NotBlank (message = "First name is mandatory")
     @ApiModelProperty(notes = "First name", example = "Graham", position = 1)
     @Size(max = 50)
     private String first_name;
+
     @NotBlank (message = "Last name is mandatory")
     @ApiModelProperty(notes = "Last name", example = "Smith", position = 2)
     @Size(max = 100)
     private String last_name;
+
     @JsonFormat(pattern = "yyyy-MM-dd")
     @ApiModelProperty(position = 3)
     @Past
