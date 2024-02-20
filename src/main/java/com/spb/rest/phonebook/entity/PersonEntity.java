@@ -1,4 +1,4 @@
-package com.spb.rest.mytask.phonebook.model;
+package com.spb.rest.phonebook.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -17,31 +17,21 @@ import java.util.Date;
 
 @Entity
 @Getter @Setter
-public class Person {
+public class PersonEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_generator")
     @SequenceGenerator(name="person_generator", sequenceName = "person_seq")
-    @ApiModelProperty(position = 0)
     private Long id;
 
-    @NotBlank (message = "First name is mandatory")
-    @ApiModelProperty(notes = "First name", example = "Graham", position = 1)
-    @Size(max = 50)
     private String first_name;
 
-    @NotBlank (message = "Last name is mandatory")
-    @ApiModelProperty(notes = "Last name", example = "Smith", position = 2)
-    @Size(max = 100)
     private String last_name;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    @ApiModelProperty(position = 3)
-    @Past
     private Date birthday;
 
-    Person() {};
+    public PersonEntity() {};
 
-    public Person(String first_name, String last_name, Date birthday) throws Exception {
+    public PersonEntity(String first_name, String last_name, Date birthday) throws Exception {
         this.first_name = first_name;
         this.last_name = last_name;
         this.birthday = birthday;

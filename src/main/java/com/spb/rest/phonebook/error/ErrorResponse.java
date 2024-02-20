@@ -1,4 +1,4 @@
-package com.spb.rest.mytask.phonebook.error;
+package com.spb.rest.phonebook.error;
 
 import lombok.Data;
 

@@ -1,5 +1,6 @@
-package com.spb.rest.mytask.phonebook.model;
+package com.spb.rest.phonebook.entity;
 
+import com.spb.rest.phonebook.util.constants;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,28 +10,21 @@ import javax.validation.constraints.Pattern;
 
 @Entity
 @Getter @Setter
-public class Phone {
+public class PhoneEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "phone_generator")
     @SequenceGenerator(name="phone_generator", sequenceName = "phone_seq")
     private Long id;
 
-    @Min(value = 1)
     private Long personid;
 
-    @Pattern(regexp="^\\+371[ .]?\\d{8}$")
     private String phone;
 
-    public enum PhoneEnum {
-        mobile, home, work
-    }
+    private constants.PhoneEnum type;
 
-    @Enumerated(EnumType.STRING)
-    private PhoneEnum type;
+    public PhoneEntity() {};
 
-    Phone() {};
-
-    public Phone(Long personid, String phone, PhoneEnum type) {
+    public PhoneEntity(Long personid, String phone, constants.PhoneEnum type) {
         this.personid = personid;
         this.phone = phone;
         this.type = type;

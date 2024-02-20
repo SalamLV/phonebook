@@ -1,4 +1,4 @@
-package com.spb.rest.mytask.phonebook;
+package com.spb.rest.phonebook;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
