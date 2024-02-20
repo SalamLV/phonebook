@@ -1,6 +1,6 @@
 ##REST API resources
 http://localhost:9000/api/phones
-http://localhost:9000/api/personEntities
+http://localhost:9000/api/persons
 
 ##API docs
 http://localhost:9000/api/api-docs
